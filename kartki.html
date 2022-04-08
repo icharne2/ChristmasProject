@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Meg Paskowski 3i">
+        <title>ZSE | AK. JavaScript. Praca z obrazem.</title>
+        <link rel="icon" href="Obrazy/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="cards.js"> </script>
+        <script src="calculation.js"> </script>
+        <script src="time.js" ></script>
+    </head>
+    <body>
+        <header>
+            <div id="naglowek">
+                <h1> Aplikacje Klienckie </h1>
+                <h2> JavaScript. Praca z obrazem. </h2>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Strona Główna </a> </li>
+                    <li> <a href="kartki.html"> Kartki </a> </li>
+                    <li> <a href=""> Upominki </a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+             <h2>Coraz bliżej święta! Czas obdarować bliskich życzeniami.</h2>
+             <p class="bold">Specjalnie dla Ciebie prezentujemy nanowszą kolekcję nastrojowych kartek &#58;&#45;&#41;</p>
+            <div>
+                <img class="kartki" id="1" src="Obrazy/k1.jpg" onmouseover="jeden(1)" onmouseout="dwa(1)">
+                <img class="kartki" id="2" src="Obrazy/k2.jpg" onmouseover="jeden(2)" onmouseout="dwa(2)">
+                <img class="kartki" id="3" src="Obrazy/k3.jpg" onmouseover="jeden(3)" onmouseout="dwa(3)">
+            </div>
+            <form onreset="res()">
+                <table>
+                <tr>
+                    <td>Podaj ilość sztuk <input type="number" id="k1" min="0" max="999"> </td>
+                    <td><button type="button" onclick="zliczenie(1)"> Policz1 </button> </td>
+                    <td>Koszt 1 wynosi: <span id="suma1">__</span> PLN</td>
+                </tr>
+                <tr>
+                    <td>Podaj ilość sztuk <input type="number" id="k2" min="0" max="999"></td>
+                    <td> <button type="button" onclick="zliczenie(2)"> Policz2 </button></td>
+                    <td>Koszt 2 wynosi: <span id="suma2">__</span> PLN</td>
+                </tr>
+                <tr>
+                    <td>Podaj ilość sztuk <input type="number" id="k3" min="0" max="999"></td>
+                    <td><button type="button" onclick="zliczenie(3)"> Policz3 </button></td>
+                    <td>Koszt 3 wynosi: <span id="suma3">__</span> PLN</td>
+                </tr>
+                </table>
+                
+                <p>Koszt calkowity wynosi: <span id="suma">__</span> PLN</p>
+                <button type="button" onclick="sum()">KALKULACJA CAŁKOWITA</button>
+                <input class="res" type="reset" value="RESET">
+            </form>
+        </main>
+        <footer>
+            <p> Copyright &copy; ZSE 2020, Stronę wykonała: Meg Paskowski, 3i</p>
+            <p> LOKALNA DATA i CZAS: <span id="czas"> </span></p>
+        </footer>
+    </body>
+</html>

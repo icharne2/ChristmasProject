@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Acme;
+	src: url(Fonts/Acme-Regular.ttf);
+}
+
+@font-face{
+	font-family: Montserrat;
+	src: url(Fonts/Montserrat-Regular.ttf);
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+}
+
+header{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 6vw;
+    border-bottom: 3px solid lightgrey;
+    padding: 1vw;
+}
+
+#naglowek{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#naglowek h1{
+    font-family: Acme;
+    text-transform: uppercase;
+    font-size: 3vw;
+    color: #339933;
+}
+
+#naglowek h2{
+    font-family: Acme;
+    text-transform: capitalize;
+    font-size: 1.5vw;
+}
+
+nav{
+     float: left;
+     width: 50%;
+     padding-top: 4vw;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: #1aa106;
+    text-decoration-line: overline;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+nav li{
+    float: left;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 37vw;
+    text-align: center;
+    padding: 5px;
+}
+
+main img{
+    margin-top: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+footer{
+    border-top: 3px solid lightgrey;
+    height: 5vw;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer p{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.kartki{
+    width: 200px;
+}
+
+table{
+    margin: 10px auto;
+    width: 650px;
+}
+
+td{
+    min-width: 50px;
+}
+
+p{
+    padding-bottom: 10px;
+}
+
+input{
+    width: 40px;
+}
+
+button{
+    background-color: cadetblue;
+    color: white;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.res{
+    background-color: cadetblue;
+    color: white;
+    padding: 5px;
+    width: auto;
+    border: 0px;
+    border-radius: 10px;
+}
